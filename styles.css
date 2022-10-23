@@ -56,4 +56,30 @@ ul {
     background-color: white;
 }
 
+form {
+    background-color: lightgrey;
+    padding: 2px 5px 15px 15px;
+}
 
+form p {
+    margin-bottom: 1px;
+}
+
+input {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#email {
+    /* resize box width */
+}
+
+#email-err {
+    color: orange;
+    margin-top: 0;
+    display: none;
+}
+
+#message {
+    /* resize box width and height */
+}

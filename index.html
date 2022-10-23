@@ -35,6 +35,7 @@
         <section class="search">
             <input type="text" id="input-el">
             <button id="search-btn">SEARCH</button> 
+            <ul id="ul-el"></ul>
         </section>    
     </nav>       
        
@@ -46,6 +47,19 @@
             <img src="images/Vision_VII_web_Gouache_ink.jpg">
         </section>
     </main>
+
+    <form id="send-msg">
+        <h3>Talk to me!</h3>
+        <p>Your name:</p>
+        <input id="firstname" type="type" name="firstname" placeholder="FirstName" />
+        <input id="lastname" type="type" name="lastname" placeholder="LastName" />
+        <p>Your email:</p>
+        <input id="email" type="email" name="email" placeholder="address@somewhere.com"/>
+        <p id="email-err">Please enter a valid email address</p>
+        <p>Your message:</p>
+        <input id="message" type="type" name="message" placeholder="Hey Jen! I love your work . . ."/>
+        <input id="send-btn" type="submit" value="SEND" />
+    </form>
 
     <script src="script.js"></script>
 </body>
