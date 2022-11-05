@@ -3,6 +3,12 @@ body {
     background-color: #00937e;
     margin: 0;
 }
+/* header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: white;
+} */
 
 header {
     color: #00937e;
@@ -10,13 +16,13 @@ header {
     width: 100vw;
     background-color: white;
     padding: 5px;
-}
+} 
 
 #logo {
     justify-content: flex-start;
     max-width: 100px;
     max-height: 100px;
-     
+  
  }
 
 #name {
@@ -27,10 +33,108 @@ header {
     padding-left: 5px;
 }
 
-nav {
+/* nav {
     width: 100vw;
+} */
+
+.nav {
+    position: fixed;
+    background: #00937e;
+    color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
- 
+
+
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__link {
+    color: inherit;
+    font-weight: bold;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: white;
+}
+
+.nav-toggle {
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
+
+.hamburger {
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: black;
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
+
+
 ul {
     list-style: none;
     color: #faa723;
@@ -41,20 +145,134 @@ ul {
     padding-left: 15px;
 }
 
-.artwork-cards {
-    display: flex;
-    margin: 15px;    
-    flex-wrap: wrap;
-    justify-content: space-between;
-   
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+* {
+    margin: 0;
 }
 
-.artwork-cards img {
-    width: 40vw;
-    margin-top: 25px;
-    padding: 5px;
-    background-color: white;
+body {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
+
+#slider {
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00937e
+    #00937e;
+}
+
+.container {
+    width: 1600px;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.subcontainer {
+    width: 85%;
+    margin: auto;
+}
+
+.controller {
+    display: flex;
+    justify-content: space-between;
+}
+
+#controls i {
+    color: black;
+    font-size: 1rem;
+    
+}
+
+.previous .next {
+    padding: 2px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.7s ease-in-out;
+    border: 3px solid white;
+    background-color: black;
+    box-shadow: 0 0 5px #bbb;
+}
+
+.previous:hover, .next:hover {
+    border: 3px solid gray;
+}
+
+.slide-img {
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid white; */
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.slide-img:hover {
+    box-shadow: 0 0 0 200px white inset;
+    opacity: 25%;
+}
+
+.slide-img a {
+    text-decoration: none;
+    /* transform: scale(0);
+    transition: 0.8s; */
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0;
+}
+
+.slide-img a:hover{
+    opacity: 100%;
+    color: red;
+    transform: scale(1.5);
+}
+
+.img-1 {
+    background-image: url(images/Profile_photo.jpg);
+}
+
+.img-2 {
+    background-image: url(images/Envisage_web_mixed_media.jpg);
+}
+
+.img-3 {
+    background-image: url(images/For_all_those_remembered_and_all_those_forgotten_web_Gouache.jpg);
+}
+
+.img-4 {
+    background-image: url(images/Gravitational_Force_web_Digital_Illustration.jpg);
+}
+
+.img-5 {
+    background-image: url(images/Vision_VII_web_Gouache_ink.jpg);
+}
+
+.img-6 {
+    background-image: url(images/Mother_Earth_Goddess_I_Instinct.jpg);
+}
+
+@media(max-width: 1600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
 
 form {
     background-color: lightgrey;
@@ -81,5 +299,5 @@ input {
 }
 
 #message {
-    /* resize box width and height */
+    /* need to resize box width and height */
 }

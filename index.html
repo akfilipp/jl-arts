@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jennifer Leigh Arts</title>
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/6a993f2424.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 </head>
 <body>
@@ -14,45 +19,146 @@
         <div id="name">
             Jennifer Leigh Arts
         </div> 
-
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
     </header>         
-      
-    <nav>
-        <ul>
-            <li>
-                About
-            </li>
-            <li>
-                Work
-            </li>
-            <li>
-                Events
-            </li>
-            <li>
-                Contact
-            </li>
-        </ul> 
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="gallery_test/gallery.html" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="#events" class="nav__link">Events</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            
+        </ul>
+    </nav>
+<!--         
         <section class="search">
-            <input type="text" id="input-el">
-            <button id="search-btn">SEARCH</button> 
+           <!-- <input type="text" id="input-el"> -->
+           <!-- <input id="search" type="text" placeholder="Search" />
+           <button id="search-btn">SEARCH</button> 
             <ul id="ul-el"></ul>
-        </section>    
-    </nav>       
-       
-    <main>
-        <section class="artwork-cards">
-            <img src="images/Envisage_web_mixed_media.jpg" alt="Mixed media piece, Envisage">
-            <img src="images/For all those remembered_and all those forgotten_web_Gouache.jpg">
-            <img src="images/Gravitational Force web_Digital_Illustration.jpg">
-            <img src="images/Vision_VII_web_Gouache_ink.jpg">
-        </section>
-    </main>
+           
+            <div id="results"></div>
+        </section>  
+          
+    </nav>        -->
+<!--  
+    <section class="panels">
+        <div class="panel panel1"></div>
+        <div class="panel panel2"></div>
+        <div class="panel panel3"></div>
+        <div class="panel panel4"></div>
+        <div class="panel panel5"></div>
+        <div class="panel panel6"></div>
+    </section> -->
+
+    <!-- <section class="main">
+        <div class="gallery">
+            <div class="gallery__item"><img src="images/Envisage_web_mixed_media.jpg" alt="Mixed media piece, Envisage"></div>
+            <div class="gallery__item"><img src="images/For_all_those_remembered_and_all_those_forgotten_web_Gouache.jpg"></div>
+            <div class="gallery__item"><img src="images/Gravitational_Force_web_Digital_Illustration.jpg"></div>
+            <div class="gallery__item"><img src="images/Vision_VII_web_Gouache_ink.jpg"></div>
+        </div>
+    </section> -->
+
+    <section id="slider">
+        <div class="container">
+            <div class="subcontainer">
+                <div class="slider-wrapper">
+                    <div class="controller">
+                        <div>My Work</div>
+                            <div id="controls">
+                                <button class="previous"><i class="fas fa-angle-double-left"></i></button>
+                                <button class="next"><i class="fas fa-angle-double-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                <br>
+                <div class="my-slider">
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img-1">
+                                <a href="#">More Info</a>
+                            </div>
+                            <br>
+                            <div>
+                                <h3>Self Portrait</h3>
+                                <p>info</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img-2">
+                                <a href="#">More Info</a>
+                            </div>
+                            <br>
+                            <div>
+                                <h3>Envisage</h3>
+                                <p>info</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img-3">
+                                <a href="#">More Info</a>
+                            </div>
+                            <br>
+                            <div>
+                                <h3>For all those remembered and all those lost</h3>
+                                <p>info</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img-4">
+                                <a href="#">More Info</a>
+                            </div>
+                            <br>
+                            <div>
+                                <h3>Gravitational Force</h3>
+                                <p>info</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img-5">
+                                <a href="#">More Info</a>
+                            </div>
+                            <br>
+                            <div>
+                                <h3>Vision VII</h3>
+                                <p>info</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img-6">
+                                <a href="#">More Info</a>
+                            </div>
+                            <br>
+                            <div>
+                                <h3>Mother Earth Goddess</h3>
+                                <p>info</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <form id="send-msg">
         <h3>Talk to me!</h3>
         <p>Your name:</p>
-        <input id="firstname" type="type" name="firstname" placeholder="FirstName" />
-        <input id="lastname" type="type" name="lastname" placeholder="LastName" />
+        <input id="name-form" type="type" name="firstname" placeholder="FirstName LastName" />
         <p>Your email:</p>
         <input id="email" type="email" name="email" placeholder="address@somewhere.com"/>
         <p id="email-err">Please enter a valid email address</p>
