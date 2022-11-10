@@ -1,6 +1,28 @@
+/* MEDIA QUERIES */
+/*
+@media (max-width: 480px) {
+    html element/class/id {
+        attribute: xyz;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    html element/class/id {
+        attribute: xyz;
+    }
+}
+
+@media (min-width: 1025px) {
+    html element/class/id {
+	    attribute: xyz;
+   }
+} 
+*/
+
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
-    background-color: #00937e;
+    font-family: 'Myriad Pro', Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: #00937e; */
+   
     margin: 0;
 }
 /* header {
@@ -14,7 +36,7 @@ header {
     color: #00937e;
     display: flex;
     width: 100vw;
-    background-color: white;
+    /* background-color: white; */
     padding: 5px;
 } 
 
@@ -25,12 +47,22 @@ header {
   
  }
 
-#name {
-    font-size: 20px;
+#title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .05rem;
     justify-content: space-evenly;
     flex-wrap: nowrap;
     padding-top: 15px;
     padding-left: 5px;
+}
+
+#subtitle {
+    color: black;
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: .1em;
+    text-align: center;
 }
 
 /* nav {
@@ -106,10 +138,23 @@ header {
     opacity: 0;
 }
 
+/* ARTIST STATEMENT MODAL */
+.open-button {
+    color: inherit;
+    font-weight: bold;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.open-button:hover {
+    color: white;
+}
+
 
 .hamburger {
     display: block;
     position: relative;
+    margin-right: 10px;
 }
 
 .hamburger,
@@ -145,6 +190,8 @@ ul {
     padding-left: 15px;
 }
 
+
+
 /* * {
     padding: 0;
     margin: 0;
@@ -167,8 +214,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00937e
-    #00937e;
+    background-color: #00937e;
 }
 
 .container {
@@ -211,10 +257,12 @@ body {
 }
 
 .slide-img {
+    
     width: 100%;
-    height: 300px;
+    height: 360px;
     /* border: 1px solid white; */
     background-size: cover;
+    background-repeat: no-repeat;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -228,10 +276,11 @@ body {
 }
 
 .slide-img a {
+    display: flex;
     text-decoration: none;
-    /* transform: scale(0);
-    transition: 0.8s; */
-    font-size: 1.5rem;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1rem;
     color: white;
     opacity: 0;
 }
@@ -272,8 +321,6 @@ body {
     }
 }
 
-
-
 form {
     background-color: lightgrey;
     padding: 2px 5px 15px 15px;
@@ -300,4 +347,14 @@ input {
 
 #message {
     /* need to resize box width and height */
+}
+
+footer {
+    color: #00937e;
+    font-weight: lighter;
+}
+
+#visits {
+    color: #faa723;
+    font-weight: bold;
 }

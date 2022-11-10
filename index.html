@@ -4,64 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jennifer Leigh Arts</title>
+   
     <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.typekit.net/kqx2ofc.css">
     <link rel="stylesheet" href="styles.css">
 
     <script src="https://kit.fontawesome.com/6a993f2424.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <script async src="https://api.countapi.xyz/hit/jlartsportfolio.com/f66e5e96-80e5-4319-b5a2-3025921abeb3?callback=websiteVisits"></script>
+    <title>Jennifer Leigh Arts</title>
 </head>
 <body>
     <header> 
         <img id="logo" src="images/jla_logo_low_res.png">
-        <div id="name">
+        <div id="title">
             Jennifer Leigh Arts
+            <br>
+            <div id="subtitle">
+                Artist &#x2022 Designer &#x2022 Illustrator
+            </div> 
         </div> 
+       
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
-    </header>         
+        
+    </header>  
+    
+    
+
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#about" class="button open-button" >About</a></li>
             <li class="nav__item"><a href="gallery_test/gallery.html" class="nav__link">Work</a></li>
-            <li class="nav__item"><a href="#events" class="nav__link">Events</a></li>
+            <li class="nav__item"><a href="events/events.html" class="nav__link">Events</a></li>
             <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             
         </ul>
     </nav>
-<!--         
-        <section class="search">
-           <!-- <input type="text" id="input-el"> -->
-           <!-- <input id="search" type="text" placeholder="Search" />
-           <button id="search-btn">SEARCH</button> 
-            <ul id="ul-el"></ul>
-           
-            <div id="results"></div>
-        </section>  
-          
-    </nav>        -->
-<!--  
-    <section class="panels">
-        <div class="panel panel1"></div>
-        <div class="panel panel2"></div>
-        <div class="panel panel3"></div>
-        <div class="panel panel4"></div>
-        <div class="panel panel5"></div>
-        <div class="panel panel6"></div>
-    </section> -->
 
-    <!-- <section class="main">
-        <div class="gallery">
-            <div class="gallery__item"><img src="images/Envisage_web_mixed_media.jpg" alt="Mixed media piece, Envisage"></div>
-            <div class="gallery__item"><img src="images/For_all_those_remembered_and_all_those_forgotten_web_Gouache.jpg"></div>
-            <div class="gallery__item"><img src="images/Gravitational_Force_web_Digital_Illustration.jpg"></div>
-            <div class="gallery__item"><img src="images/Vision_VII_web_Gouache_ink.jpg"></div>
-        </div>
-    </section> -->
+    <section id="artist-statement">
+        <dialog class="modal" id="modal">
+            <h2>Artist Statement</h2>                       
+            <h3>“Creativity is a view into one’s soul”</h3> 
+            <img src="images/Profile_photo.jpg">                               
+                <br>
+                <p>I feel my artwork is expressive; it helps me express my emotions. If you see the progress of my artwork you would see the different stages in my life. My artwork is about trying to tell a story and expressing that story with emotion. I translate my dreams and experiences through my artwork. My inspiration not only comes from my personal experiences but also from nature, music and books. I have expressed this through different media; Gouache is my favorite. I also have experience in Digital Illustration, Acrylic, Watercolor, Oil, Graphite, Charcoal, Mixed Paper Collage, Ceramics, Metalsmithing and Printmaking.
+                <br><br>                                    
+                    Throughout the years, I have shown in over 20 exhibitions. My education includes a 4 ­ year Art Emphasis in High School, a Bachelor in Fine Art, with an emphasis in Watercolor, from Western Michigan University and an Associate of Applied Science in Graphic Design and Illustration from Kalamazoo Valley Community College.</p>
+           
+            <button class="button close-button">close</button>
+        </dialog>
+    </section>
 
     <section id="slider">
         <div class="container">
@@ -75,80 +71,75 @@
                             </div>
                         </div>
                     </div>
-                <br>
-                <div class="my-slider">
-                    <div>
+                    <br>
+                
+                    <div class="my-slider">                                      
+                    
                         <div class="slide">
-                            <div class="slide-img img-1">
-                                <a href="#">More Info</a>
+                            <div class="slide-img img-1">                  
+                                    <a href="images/Profile_photo.jpg">click for full image</a>                                                           
                             </div>
-                            <br>
-                            <div>
-                                <h3>Self Portrait</h3>
-                                <p>info</p>
-                            </div>
+
                         </div>
-                    </div>
-                    <div>
+                      
+                   
+                   
                         <div class="slide">
                             <div class="slide-img img-2">
-                                <a href="#">More Info</a>
-                            </div>
-                            <br>
+                                <a href="#">click for full image</a>
+                            </div>                           
                             <div>
                                 <h3>Envisage</h3>
                                 <p>info</p>
                             </div>
                         </div>
-                    </div>
-                    <div>
+                                     
                         <div class="slide">
                             <div class="slide-img img-3">
-                                <a href="#">More Info</a>
+                                <a href="#">click for full image</a>
                             </div>
-                            <br>
+                            
                             <div>
                                 <h3>For all those remembered and all those lost</h3>
                                 <p>info</p>
                             </div>
                         </div>
-                    </div>
-                    <div>
+                                      
                         <div class="slide">
                             <div class="slide-img img-4">
-                                <a href="#">More Info</a>
+                                <a href="#">click for full image</a>
                             </div>
-                            <br>
+                            
                             <div>
                                 <h3>Gravitational Force</h3>
                                 <p>info</p>
                             </div>
                         </div>
-                    </div>
-                    <div>
+                                    
                         <div class="slide">
                             <div class="slide-img img-5">
-                                <a href="#">More Info</a>
+                                <a href="#">click for full image</a>
                             </div>
-                            <br>
+                            
                             <div>
                                 <h3>Vision VII</h3>
                                 <p>info</p>
                             </div>
                         </div>
-                    </div>
-                    <div>
+                   
+                  
                         <div class="slide">
                             <div class="slide-img img-6">
-                                <a href="#">More Info</a>
+                                <a href="#">click for full image</a>
                             </div>
-                            <br>
+                            
                             <div>
                                 <h3>Mother Earth Goddess</h3>
                                 <p>info</p>
                             </div>
                         </div>
-                    </div>
+                        
+                    </div> 
 
                 </div>
             </div>
@@ -167,7 +158,10 @@
         <input id="send-btn" type="submit" value="SEND" />
     </form>
 
+    <footer>This site has been visited <span id="visits"></span> times.</footer>
+
     <script src="script.js"></script>
 </body>
+
 
 </html>
