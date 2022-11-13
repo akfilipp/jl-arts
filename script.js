@@ -12,6 +12,27 @@ navLinks.forEach(link => {
     })
 })
 
+const url = "https://api.api-ninjas.com/v1/quotes?category=art";
+fetch(url, {
+  method: "GET",
+  headers: {
+    "X-Api-Key": "YOUR_KEY_FROM_API-NINJAS" // Get key at: https://api-ninjas.com/
+  }
+})
+
+// RANDOM ART QUOTE from API
+.then(resp => resp.json())
+  .then(function(data) {
+    let printQuote = "\"" + data[0].quote + "\"";
+    let printAuthor = ' --' + data[0].author
+    console.log(data);
+    document.querySelector('#quote-text').innerHTML = printQuote;
+    document.querySelector('#quote-author').innerHTML = printAuthor;
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+
 //MODALS
 const modal = document.querySelector('#modal');
 const openModal = document.querySelector('.open-button');
