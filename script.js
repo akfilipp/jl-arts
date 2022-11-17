@@ -12,15 +12,15 @@ navLinks.forEach(link => {
     })
 })
 
+// RANDOM ART QUOTE from API
 const url = "https://api.api-ninjas.com/v1/quotes?category=art";
 fetch(url, {
   method: "GET",
   headers: {
-    "X-Api-Key": "YOUR_KEY_FROM_API-NINJAS" // Get key at: https://api-ninjas.com/
+    "X-Api-Key": "YOUR_API_KEY_HERE" // Get key at: https://api-ninjas.com/
   }
 })
 
-// RANDOM ART QUOTE from API
 .then(resp => resp.json())
   .then(function(data) {
     let printQuote = "\"" + data[0].quote + "\"";
@@ -46,33 +46,64 @@ closeModal.addEventListener('click', () => {
     modal.close();
 })
 
-// GALLERY SLIDER
-let slider = tns({
-    container : ".my-slider",
-    "slideBy" : 1,
-    "speed": 400,
-    "nav": false,
-    controlsContainer: "#controls",
-    prevButton : ".previous",
-    nextButton : ".next",
-    responsive: {
-        1600: {
-            items: 4,
-            gutter: 20
-        },
-        1024: {
-            items: 3,
-            gutter: 20
-        },
-        768: {
-            items: 2,
-            gutter: 20
-        },
-        480: {
-            items: 1
-        }
+// IMAGE SLIDER
+const slider = document.querySelector(".slider");
+const card = slider.querySelector(".card");
+const leftButton = document.querySelector("#back");
+const rightButton = document.querySelector("#fwd");
+
+const sliderWidth = slider.offsetWidth;
+const cardStyle = card.currentStyle || window.getComputedStyle(card)
+const cardMarginRight = Number(cardStyle.marginRight.match(/\d+/g)[0]);
+
+const cardCount = slider.querySelectorAll(".card").length;
+
+let offset = 0;
+const maxX = -((cardCount / 3) * sliderWidth + 
+               (cardMarginRight * (cardCount / 3)) - 
+               sliderWidth);
+
+leftButton.addEventListener("click", function() {
+  if (offset !== 0) {
+    offset += sliderWidth + cardMarginRight;
+    slider.style.transform = `translateX(${offset}px)`;
     }
-});
+})
+  
+rightButton.addEventListener("click", function() {
+  if (offset !== maxX) {
+    offset -= sliderWidth + cardMarginRight;
+    slider.style.transform = `translateX(${offset}px)`;
+  }
+})
+
+// GALLERY SLIDER with 'Tiny Slider' Library
+// let slider = tns({
+//     container : ".my-slider",
+//     "slideBy" : 1,
+//     "speed": 400,
+//     "nav": false,
+//     controlsContainer: "#controls",
+//     prevButton : ".previous",
+//     nextButton : ".next",
+//     responsive: {
+//         1600: {
+//             items: 4,
+//             gutter: 20
+//         },
+//         1024: {
+//             items: 3,
+//             gutter: 20
+//         },
+//         768: {
+//             items: 2,
+//             gutter: 20
+//         },
+//         480: {
+//             items: 1
+//         }
+//     }
+// });
 
 // FORM VALIDATION
 const email = document.getElementById("email");

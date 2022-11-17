@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="https://use.typekit.net/kqx2ofc.css">
     <link rel="stylesheet" href="styles.css">
 
-    <script src="https://kit.fontawesome.com/6a993f2424.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://kit.fontawesome.com/6a993f2424.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script async src="https://api.countapi.xyz/hit/jlartsportfolio.com/f66e5e96-80e5-4319-b5a2-3025921abeb3?callback=websiteVisits"></script>
     <title>Jennifer Leigh Arts</title>
 </head>
@@ -65,8 +65,49 @@
         <p id="quote-author"></p>
     </section>
 
+<main>
+    <div class="wrapper">
+        <ul class="slider" id="slider" >
+          <li> <img class="card" src="/images/Vision_VII_web_Gouache_ink.jpg"/></li>
+          
+          <li><img class="card" src="/images/Envisage_web_mixed_media.jpg"></li>
+          
+          <li><img class="card" src="/images/Gravitational_Force_web_Digital_Illustration.jpg"/></li>
+          
+          <li><img class="card" src="/images/Profile_photo.jpg"/></li>
+          
+          <li><img class="card" src="/images/For_all_those_remembered_and_all_those_forgotten_web_Gouache.jpg"/></li>
+          
+          <li><img class="card" src="/images/Mother_Earth_Goddess_I_Instinct.jpg"/></li>       
+        </ul>
+    
+        <div class="button-wrapper">
+          <button id="back">&#x276E;</button>
+          <button id="fwd">&#x276F;</button>
+        </div>
+      </div>
+    </main>
 
-    <section id="slider">
+    <section class="images-smallscrn">
+        
+              <img class="images-smallscrn-each" src="/images/Vision_VII_web_Gouache_ink.jpg">
+           
+              
+              <img class="images-smallscrn-each" src="/images/Gravitational_Force_web_Digital_Illustration.jpg">
+    
+              <img class="images-smallscrn-each" src="/images/For_all_those_remembered_and_all_those_forgotten_web_Gouache.jpg">
+          
+    
+              <img class="images-smallscrn-each" src="/images/Envisage_web_mixed_media.jpg">
+           
+    
+              <img class="images-smallscrn-each" src="/images/Profile_photo.jpg">
+          
+              <img class="images-smallscrn-each" src="/images/Mother_Earth_Goddess_I_Instinct.jpg">
+    
+    </section>
+
+    <!-- <section id="slider">
         <div class="container">
             <div class="subcontainer">
                 <div class="slider-wrapper">
@@ -84,18 +125,19 @@
                     
                         <div class="slide">
                             <div class="slide-img img-1">                  
-                                    <a href="images/Profile_photo.jpg">click for full image</a>                                                           
                             </div>
-
+                            <div class="title">
+                                <h3>Vision VII</h3>
+                                <p>info</p>
+                            </div>
                         </div>
-                      
-                   
-                   
+              
                         <div class="slide">
                             <div class="slide-img img-2">
                                 <a href="#">click for full image</a>
                             </div>                           
-                            <div>
+                            
+                            <div class="title">
                                 <h3>Envisage</h3>
                                 <p>info</p>
                             </div>
@@ -106,30 +148,31 @@
                                 <a href="#">click for full image</a>
                             </div>
                             
-                            <div>
-                                <h3>For all those remembered and all those lost</h3>
-                                <p>info</p>
-                            </div>
-                        </div>
-                                      
-                        <div class="slide">
-                            <div class="slide-img img-4">
-                                <a href="#">click for full image</a>
-                            </div>
-                            
-                            <div>
+                            <div class="title">
                                 <h3>Gravitational Force</h3>
                                 <p>info</p>
                             </div>
+                               
+                          
+                        </div>
+                                      
+                        <div class="slide">
+                            <div class="slide-img img-4"><a href="images/Profile_photo.jpg">click for full image</a> 
+                            </div>
+                            
+                            <div class="title">
+                                <h3>Profile Photo</h3>
+                                <p>info</p>
+                            </div>    
                         </div>
                                     
                         <div class="slide">
                             <div class="slide-img img-5">
                                 <a href="#">click for full image</a>
                             </div>
-                            
-                            <div>
-                                <h3>Vision VII</h3>
+
+                            <div class="title"> 
+                                <h3>For all those remembered and all those lost</h3>
                                 <p>info</p>
                             </div>
                         </div>
@@ -140,7 +183,7 @@
                                 <a href="#">click for full image</a>
                             </div>
                             
-                            <div>
+                            <div class="title">
                                 <h3>Mother Earth Goddess</h3>
                                 <p>info</p>
                             </div>
@@ -151,10 +194,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
+    <section class="contact">
+        <div id="divider-bottom"></div>
     <form id="send-msg">
-        <h3>Talk to me!</h3>
+        <h3 id="hey">Talk to me!</h3>
         <p>Your name:</p>
         <input id="name-form" type="type" name="firstname" placeholder="FirstName LastName" />
         <p>Your email:</p>
@@ -164,6 +209,7 @@
         <input id="message" type="type" name="message" placeholder="Hey Jen! I love your work . . ."/>
         <input id="send-btn" type="submit" value="SEND" />
     </form>
+</section>
 
     <footer>This site has been visited <span id="visits"></span> times.</footer>
 
