@@ -1,4 +1,4 @@
-This is my student project for Code Louisville Web Development 2. It is an early draft of an artist's portfolio website. It's not nearly as pretty or fancy as I'd like it to be yet, but I will get there. There are many more features I plan on including as my schedule allows and I become more adept with front end languages. For now, my focus is on meeting requirements for completion of this class, so please don't judge the ugly CSS too harshly.
+This is my student project for Code Louisville Web Development 2. It is an early draft of an artist's portfolio website. It's not nearly as pretty or fancy as I'd like it to be yet, but I will get there. There are many more features I plan on including as my schedule allows and I become more adept with front end languages. For now, my focus is on meeting requirements for completion of this class, so please don't judge the ugly and/or otherwise suboptimal UI too harshly.
 
 Javascript features include (location of first line of code follows each feature description):
 1. Form validation using regex. (script.JS, line 88)
@@ -6,6 +6,7 @@ Javascript features include (location of first line of code follows each feature
 3. Modern UI features including: </br>
     - Interactive image slider (script.JS, line 50)</br>
     - Filterable image gallery (gallery/work.js, line 17)
+    - Artist statement modal (script.js, line 37); Sorry, it's only accessible through drop-down 'About' link from home page as of 11/18/22. Will update when time allows.
     - Animated hamburger menu (script.JS, line 2)</br>
 
 4. Content generated from API data including:</br>
