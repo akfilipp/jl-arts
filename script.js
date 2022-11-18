@@ -47,35 +47,42 @@ closeModal.addEventListener('click', () => {
 })
 
 // IMAGE SLIDER
-const slider = document.querySelector(".slider");
-const card = slider.querySelector(".card");
-const leftButton = document.querySelector("#back");
-const rightButton = document.querySelector("#fwd");
-
-const sliderWidth = slider.offsetWidth;
-const cardStyle = card.currentStyle || window.getComputedStyle(card)
-const cardMarginRight = Number(cardStyle.marginRight.match(/\d+/g)[0]);
-
-const cardCount = slider.querySelectorAll(".card").length;
-
-let offset = 0;
-const maxX = -((cardCount / 3) * sliderWidth + 
-               (cardMarginRight * (cardCount / 3)) - 
-               sliderWidth);
-
-leftButton.addEventListener("click", function() {
-  if (offset !== 0) {
-    offset += sliderWidth + cardMarginRight;
-    slider.style.transform = `translateX(${offset}px)`;
-    }
-})
+function moveSlides() {
+  const slider = document.querySelector(".slider");
+  const card = slider.querySelector(".card");
+  const leftButton = document.querySelector("#back");
+  const rightButton = document.querySelector("#fwd");
   
-rightButton.addEventListener("click", function() {
-  if (offset !== maxX) {
-    offset -= sliderWidth + cardMarginRight;
-    slider.style.transform = `translateX(${offset}px)`;
-  }
-})
+  const sliderWidth = slider.offsetWidth;
+  const cardStyle = card.currentStyle || window.getComputedStyle(card)
+  const cardMarginRight = Number(cardStyle.marginRight.match(/\d+/g)[0]);
+  
+  const cardCount = slider.querySelectorAll(".card").length;
+  
+  
+  let offset = 0;
+  const maxX = -((cardCount / 3) * sliderWidth + 
+                 (cardMarginRight * (cardCount / 3)) - 
+                 sliderWidth);
+  
+  leftButton.addEventListener("click", function() {
+    if (offset !== 0) {
+      offset += sliderWidth + cardMarginRight;
+      slider.style.transform = `translateX(${offset}px)`;
+      }
+  })
+
+  
+  rightButton.addEventListener("click", function() {
+    if (offset !== maxX) {
+      offset -= sliderWidth + cardMarginRight;
+      slider.style.transform = `translateX(${offset}px)`;
+    }
+  })
+}
+
+// window.onload = moveSlides(); 
+// window.onresize = moveSlides();
 
 // FORM VALIDATION
 const email = document.getElementById("email");

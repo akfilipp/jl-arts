@@ -11,12 +11,10 @@
     <script async src="https://api.countapi.xyz/hit/jlartsportfolio.com/f66e5e96-80e5-4319-b5a2-3025921abeb3?callback=websiteVisits"></script>
 
 
-    <script defer src="script.js"></script>
-
     <title>Jennifer Leigh Arts</title>
 </head>
 
-<body>
+<body onload="moveSlides()" onresize="moveSlides()">
     <header> 
         <div id="branding">
             <img id="logo" src="images/jla_logo_low_res.png">
@@ -37,7 +35,7 @@
         <ul class="nav__list">
             <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
             <li class="nav__item"><a href="#about" class="button open-button" >About</a></li>
-            <li class="nav__item"><a href="gallery_test/gallery.html" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="/gallery/work.html" class="nav__link">Work</a></li>
             <li class="nav__item"><a href="events/events.html" class="nav__link">Events</a></li>
             <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>           
         </ul>
@@ -62,7 +60,7 @@
         <p id="quote-author"></p>
     </section>
 
-<main>
+<main >
     <div class="wrapper">
         <ul class="slider" id="slider" >
           <li> <img class="card" src="images/Vision_VII_web_Gouache_ink.jpg" alt="gouache and ink painting by artist Jennifer Leigh, 'Vision VII'"></li>
@@ -71,7 +69,7 @@
           
           <li><img class="card" src="images/Gravitational_Force_web_Digital_Illustration.jpg" alt="digital illustration by artist Jennifer Leigh, 'Gravitational Force'"></li>
           
-          <li><img class="card" src="images/Profile_photo.jpg" alt="digital illustration of the artist Jennifer Leigh"></li>
+          <li><img class="card" src="images/Profile_photo.jpg" alt="digital illustration of the artist Jennifer Leigh"> </li>
           
           <li><img class="card" src="images/For_all_those_remembered_and_all_those_forgotten_web_Gouache.jpg" alt="gouache painting by artist Jennifer Leigh, 'For all those remembered and all those forgotten'"></li>
           
@@ -118,6 +116,8 @@
 
     <footer>This site has been visited <span id="visits"></span> times.</footer>
 
+
+    <script src="script.js"></script>
 </body>
 
 </html>

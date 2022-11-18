@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://use.typekit.net/kqx2ofc.css">
+    <link rel="stylesheet" href="work.css">
+</head>
+
+<body>
+
+    <header> 
+        <div id="branding">
+            <img id="logo" src="/images/jla_logo_low_res.png">
+            <div id="title">
+            Jennifer Leigh Arts
+            <br>
+            <div id="subtitle">
+                Artist &#x2022 Designer &#x2022 Illustrator
+            </div> 
+            </div> 
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>       
+    </header>  
+    
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#about" class="button open-button" >About</a></li>
+            <li class="nav__item"><a href="work.html" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="/events/events.html" class="nav__link">Events</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>           
+        </ul>
+    </nav>
+
+<main>
+    <div id="main-heading">
+        <h1>MY PORTFOLIO</h1>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('paintings')"> Paintings</button>
+            <button class="btn" onclick="filterSelection('digital-illustration')">Digital Illustrations</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column paintings">
+            <div class="content">
+                <img class="work-info-each-each" src="/images/Vision_VII_web_Gouache_ink.jpg" alt="gouache and ink painting by artist Jennifer Leigh, 'Vision VII'">
+                <h4>Vision VII</h4>
+                <p>Medium: gouache and ink
+                    <br>
+                    Dimensions: 18 x 24
+                    <br>
+                    NFS
+                </p>
+            </div>
+        </div>
+        <div class="column paintings">
+            <div class="content">
+            <img src="/images/Mother_Earth_Goddess_I_Instinct.jpg" alt="Lights">
+            <h4>Mother Earth Goddess I Instinct</h4>
+            <p>Medium: gouache and ink
+                <br>
+                Dimensions: 15 x 15
+                <br>
+                NFS
+            </p>
+            </div>
+        </div>
+        <div class="column paintings">
+            <div class="content">
+            <img src="/images/For_all_those_remembered_and_all_those_forgotten_web_Gouache.jpg" alt="gouache painting by artist Jennifer Leigh, 'For all those remembered and all those forgotten'">
+            <h4>For all those remembered and all those forgotten</h4>
+            <p>Medium: gouache
+                <br>
+                Dimensions: 18 x 24
+                <br>
+                NFS
+            </p>
+            </div>
+        </div>
+        
+        <div class="column paintings">
+            <div class="content">
+            <img src="/images/Envisage_web_mixed_media.jpg" alt="mixed media painting by artist Jennifer Leigh, 'Envisage'">
+            <h4>Envisage</h4>
+            <p>Medium: mixed media
+                <br>
+                Dimensions: 15 x 15
+                <br>
+                NFS
+            </p>
+            </div>
+        </div>
+
+        <div class="column digital-illustration">
+            <div class="content">
+            <img src="/images/Gravitational_Force_web_Digital_Illustration.jpg" alt="digital illustration by artist Jennifer Leigh, 'Gravitational Force'">
+            <h4>Gravitational Force</h4>
+                <p>Medium: digital illustration
+                <br>
+                Dimensions: 18 x 24
+                <br>
+                NFS</p>
+            </div>
+        </div>
+        <div class="column digital-illustration">
+            <div class="content">
+            <img src="/images/Profile_photo.jpg" alt="digital illustration of the artist Jennifer Leigh">
+            <h4>Artist Profile</h4>
+            <p>Medium: digital illustration
+                <br>
+                Dimensions: 18 x 24
+                <br>
+                NFS</p>
+            </div>
+        </div>
+    </div>
+
+<!-- END MAIN -->
+
+</main>
+    <!-- <section class="work-info-each">
+        
+        <img class="work-info-each-each" src="/images/Vision_VII_web_Gouache_ink.jpg" alt="gouache and ink painting by artist Jennifer Leigh, 'Vision VII'">
+     
+        <img class="work-info-each-each" src="/images/Gravitational_Force_web_Digital_Illustration.jpg" alt="digital illustration by artist Jennifer Leigh, 'Gravitational Force'">
+
+        <img class="work-info-each-each" src="/images/For_all_those_remembered_and_all_those_forgotten_web_Gouache.jpg" alt="gouache painting by artist Jennifer Leigh, 'For all those remembered and all those forgotten'"> 
+        
+        <img class="work-info-each-each" src="/images/Envisage_web_mixed_media.jpg" alt="mixed media painting by artist Jennifer Leigh, 'Envisage'">
+         
+        <img class="work-info-each-each" src="/images/Profile_photo.jpg" alt="digital illustration of the artist Jennifer Leigh">
+    
+        <img class="work-info-each-each" src="/images/Mother_Earth_Goddess_I_Instinct.jpg" alt="gouache and  ink painting by artist Jennifer Leigh, 'Mother Earth Goddess I Instinct'">    
+</section> -->
+
+<script src="work.js"></script>
+</body>
+
+</html>
