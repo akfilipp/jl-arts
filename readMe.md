@@ -5,11 +5,11 @@ Javascript features include (location of first line of code follows each feature
 2. Countdown calendar for upcoming events (events/events.JS, line 1)
 3. Modern UI features including: </br>
     - Interactive image slider (script.JS, line 50)</br>
-    -Filterable image gallery (gallery/work.js, line 17)
+    - Filterable image gallery (gallery/work.js, line 17)
     - Animated hamburger menu (script.JS, line 2)</br>
 
 4. Content generated from API data including:</br>
     - Random quotes that appear and/or change upon page load(script.JS, line 16)</br>
     - Page views counter (index.html, line 11 and script.js, line 105)
 
-NOTES: For security purposes, my API key for the quote generator will not be available after the project has been graded. The key came from https://api-ninjas.com/, which is free for up to 50,000 requests per month. 
+NOTES: For security purposes, my API key for the quote generator will not be available after the project has been reviewed. The key came from https://api-ninjas.com/, which is free for up to 50,000 requests per month. 
