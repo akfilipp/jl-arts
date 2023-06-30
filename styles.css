@@ -1,23 +1,13 @@
-
-
 body {
     font-family: 'Myriad Pro', sans-serif;
-    /* background-color: #00937e; */
-   
     margin: 0;
 }
-/* header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    background-color: white;
-} */
+
 
 header {
     color: #00937e;
     display: flex;
     width: 100vw;
-    /* background-color: white; */
     padding: 5px;
     align-content: center;
 } 
@@ -30,17 +20,15 @@ header {
 
 #logo {
     justify-content: flex-start;
-    max-width: 100px;
     max-height: 100px;
-  
- }
+}
 
 #title {
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: .05rem;
-   display:inline-block;
-   align-items: center;
+    display:inline-block;
+    align-items: center;
     flex-wrap: nowrap;
     padding-top: 15px;
     padding-left: 5px;
@@ -54,10 +42,6 @@ header {
     text-align: center;
 }
 
-/* nav {
-    width: 100vw;
-} */
-
 .nav {
     position: fixed;
     background: #00937e;
@@ -67,12 +51,9 @@ header {
     left: 0;
     right: 0;
     z-index: 100;
-    
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
-
-
 
 .nav__list {
     list-style: none;
@@ -211,11 +192,42 @@ img {
     height: auto;
 }
 
+dialog {
+    height: 90vh;
+    width: 90vw;
+}
+.modal h2 {
+    margin-bottom: 3px;
+    margin-top: 5px;
+    font-size: 2rem;
+}
+#artist-statement-container {
+    padding: 5px 0;
 
-.modal img {
-    max-width: 400px;
+   
 }
 
+#artist-statement-tagline {
+    font-weight: 500;
+    font-size: 1.25rem;
+    font-style: oblique;
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+
+.modal img {
+    float: left;
+    max-width: 350px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.modal p {
+    margin-left: 5px;
+    padding-top: 3px;
+    margin-top: 3px;
+}
 
 @media only screen and (max-width: 480px) {
     .wrapper {
@@ -260,10 +272,10 @@ img {
           padding: 3px;
          height: auto;
          max-width: 45vw;
-      
 
-        }
-} 
+    }
+ }
+    
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .images-smallscrn {
@@ -297,12 +309,6 @@ img {
         font-weight: bold;
         cursor: pointer;
         color: black;
-        /* border: solid 2px white;
-        color: white;
-        border-radius: 50%;
-        text-shadow: #faa723;
-        padding: 5px 5px 2px 5px;
-         */
     }
 
     #fwd {
@@ -328,7 +334,6 @@ img {
       width: 250px;
       min-height: 250px;
       margin: auto;
-    
       display: inline-block;
       padding: 0 3px;
     }
@@ -386,12 +391,10 @@ img {
       transition: all 1s ease;
     }
     
-    .card {
-        
+    .card {  
       width: 333px;
       min-height: 250px;
       margin: auto;
-    
       display: inline-block;
       padding: 0 1px;
     }
@@ -430,10 +433,6 @@ form p {
 input {
     margin-top: 0;
     padding-top: 0;
-}
-
-#email {
-    /* resize box width */
 }
 
 #email-err {

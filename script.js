@@ -46,6 +46,7 @@ closeModal.addEventListener('click', () => {
     modal.close();
 })
 
+
 // IMAGE SLIDER
 function moveSlides() {
   const slider = document.querySelector(".slider");
@@ -102,10 +103,10 @@ email.addEventListener ('input', function(e) {
     }
 });
 
-//COUNTER API
-function websiteVisits(response) {
-    document.querySelector("#visits").textContent = response.value;
-}
+// //COUNTER API
+// function websiteVisits(response) {
+//     document.querySelector("#visits").textContent = response.value;
+// }
 
 
 

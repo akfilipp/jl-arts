@@ -12,7 +12,6 @@
     color: #00937e;
     display: flex;
     width: 100vw;
-    /* background-color: white; */
     padding: 5px;
     align-content: center;
 } 
@@ -177,6 +176,7 @@
     font-size: 2rem;
     word-break: break-all;
   }
+
   
   .row {
     margin: 10px -16px;
@@ -190,7 +190,8 @@
 
   .column {
     float: left;
-    width: 33.33%;
+    width: 33.3%;
+    height: 800px;
     display: none;
   }
   
@@ -198,6 +199,7 @@
   .row:after {
     content: "";
     display: table;
+    height: 100%;
     clear: both;
   }
   
@@ -206,7 +208,8 @@
     background-color: white;
     padding: 10px;
     width: 100%;
-    height: 550px;
+    max-height: 95%;
+  
   }
 
   img {
@@ -216,7 +219,7 @@
   
 
   .show {
-    display: block;
+    display: grid;
   }
   
  
@@ -239,20 +242,22 @@
 
   @media only screen and (max-width: 480px) {
     .column {
-      width: 50%;
+      width: 100%;
+      /* height: auto; */
     }
 
     .content {
-      height: 420px;
+      height: 100%;
     }
   }
 
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     .column {
       width: 50%;
+      /* height: 512px; */
     }
 
     .content {
-      height: 600px;
+      height: 100%;
     } 
   }
