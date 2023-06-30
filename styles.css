@@ -136,20 +136,13 @@ header {
 
 
 .modal img {
-    /* justify-content: flex-start;
-   */
    float: left;
     max-width: 200px;
     height: auto;
     margin-right: 10px;
-    /* flex-wrap: wrap; */
 }
 
 .modal p {
-
-   /* display:inline-block;
-   align-items: flex-start;
-    flex-wrap: wrap; */
     margin-left: 5px;
     padding-top: 3px;
     margin-top: 3px;
