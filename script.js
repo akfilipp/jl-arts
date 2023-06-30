@@ -13,13 +13,13 @@ navLinks.forEach(link => {
 })
 
 // RANDOM ART QUOTE from API
-const url = "https://api.api-ninjas.com/v1/quotes?category=art";
-fetch(url, {
-  method: "GET",
-  headers: {
-    "X-Api-Key": "rQSEbmqnDevCozdsb9R5iQ==fyUuwcPS8BPzTUQ3" // Get key at: https://api-ninjas.com/
-  }
-})
+// const url = "https://api.api-ninjas.com/v1/quotes?category=art";
+// fetch(url, {
+//   method: "GET",
+//   headers: {
+//     "X-Api-Key": "rQSEbmqnDevCozdsb9R5iQ==fyUuwcPS8BPzTUQ3" // Get key at: https://api-ninjas.com/
+//   }
+// })
 
 .then(resp => resp.json())
   .then(function(data) {
