@@ -117,6 +117,12 @@
 }
 
 /* ARTIST STATEMENT MODAL */
+
+#artist-statement {
+  
+  height: 90 vw;
+  width: auto;
+}
 .open-button {
     color: inherit;
     font-weight: bold;
@@ -129,6 +135,7 @@
 }
 
 
+/* HAMBURGER MENU */
 .hamburger {
     display: block;
     position: relative;

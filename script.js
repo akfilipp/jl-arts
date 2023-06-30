@@ -17,7 +17,7 @@ const url = "https://api.api-ninjas.com/v1/quotes?category=art";
 fetch(url, {
   method: "GET",
   headers: {
-    "X-Api-Key": "YOUR_API_KEY_HERE" // Get key at: https://api-ninjas.com/
+    "X-Api-Key": "rQSEbmqnDevCozdsb9R5iQ==fyUuwcPS8BPzTUQ3" // Get key at: https://api-ninjas.com/
   }
 })
 

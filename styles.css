@@ -109,17 +109,63 @@ header {
 }
 
 /* ARTIST STATEMENT MODAL */
-.open-button {
-    color: inherit;
-    font-weight: bold;
-    font-size: 3em;
-    text-decoration: none;
+    dialog {
+        height: 90vh;
+        width: 90vw;
+    }
+    .modal h2 {
+        margin-bottom: 3px;
+        margin-top: 5px;
+        font-size: 2rem;
+    }
+    #artist-statement-container {
+        /* display: flex;
+    align-content: flex-start; */
+    padding: 5px 0;
+
+       
+    }
+
+    #artist-statement-tagline {
+        font-weight: 500;
+        font-size: 1.25rem;
+        font-style: oblique;
+        margin: 0 0 2px 0;
+        padding: 0;
+    }
+
+
+.modal img {
+    /* justify-content: flex-start;
+   */
+   float: left;
+    max-width: 200px;
+    height: auto;
+    margin-right: 10px;
+    /* flex-wrap: wrap; */
 }
 
-.open-button:hover {
-    color: white;
+.modal p {
+
+   /* display:inline-block;
+   align-items: flex-start;
+    flex-wrap: wrap; */
+    margin-left: 5px;
+    padding-top: 3px;
+    margin-top: 3px;
 }
 
+  .open-button {
+      color: inherit;
+      font-weight: bold;
+      font-size: 3em;
+      text-decoration: none;
+  }
+  
+  .open-button:hover {
+      color: white;
+  }
+  
 
 .hamburger {
     display: block;

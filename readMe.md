@@ -3,6 +3,9 @@ This is my student project for Code Louisville Web Development 2. It is an early
 Javascript features include (location of first line of code follows each feature description):
 1. Form validation using regex. (script.JS, line 88)
 2. Countdown calendar for upcoming events (events/events.JS, line 1)
+Javascript features include (location of first line of code follows each feature description):
+1. Form validation using regex. (script.JS, line 88)
+2. Countdown calendar for upcoming events (events/events.JS, line 1)
 3. Modern UI features including: </br>
     - Interactive image slider (script.JS, line 50)</br>
     -Filterable image gallery (gallery/work.js, line 17)
