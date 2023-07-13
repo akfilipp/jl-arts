@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link rel="stylesheet" href="https://use.typekit.net/kqx2ofc.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
 
     <!-- <script async src="https://api.countapi.xyz/hit/jlartsportfolio.com/f66e5e96-80e5-4319-b5a2-3025921abeb3?callback=websiteVisits"></script> -->
 
 
-    <title>Jennifer Leigh Arts Home Page</title>
+    <title>Jennifer Leigh Arts Aboout the Artist</title>
 </head>
 
 <body onload="moveSlides()" onresize="moveSlides()">
     <header> 
         <div id="branding">
-            <img id="logo" src="images/logos/jleigh_FullLogo.png">
+            <img id="logo" src="/images/logos/jleigh_FullLogo.png">
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -26,43 +26,53 @@
     
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li> 
-            <li class="nav__item"><a href="/about/about.html" class="nav__link" >About</a></li>
-            <!-- <li class="nav__item"><a href="#about" class="button open-button" >About</a></li> -->
-            <li class="nav__item"><a href="gallery/work.html" class="nav__link">Work</a></li>
-            <li class="nav__item"><a href="events/events.html" class="nav__link">Events</a></li>
+            <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="about.html" class="button open-button" >About</a></li>
+            <li class="nav__item"><a href="/gallery/work.html" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="/events/events.html" class="nav__link">Events</a></li>
             <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>           
         </ul>
     </nav>
 
-    <section id="artist-statement">
-        <dialog class="modal" id="modal">
-            <h2>About the Artist</h2>  
-                               
-            <h3 id="artist-statement-tagline">“Creativity is a view into one’s soul”</h3> 
-            <div id="artist-statement-container">                     
-                <img src="images/Profile_photo.jpg">                               
-                    <p>
-                    Jennifer was born in Kalamazoo, Michigan in 1973. She started taking art seriously in High School where she received a four year art award upon graduation. After High School, she went on to study at Western Michigan University where she received awards and honors in juried exhibitions. She graduated in 2000 with a Bachelor in Fine Arts, emphasis in Watercolor. In2009 she went back to school at Kalamazoo Valley Community College pursuing an Associate of Applied Science in Graphic Design and secondary in Illustration. She graduated with Honors in 2012.
-                    <br><br>
-                    Jennifer Leigh is an experimental Artist. She enjoys learning how to create with many different kinds of media; Gouache is her favorite. She has experience using Watercolor, Acrylic, Oils, Charcoal, Colored Pencil, Ceramics, Printmaking, Metalsmithing and Digital Media.
-                    <br><br>
-                    Jennifer has often used her creative outlets as therapy. She creates with her emotions. “I feel my artwork is expressive; it helps me express my emotions. If you see the progression of my artwork you would see the different stages in my life. My artwork is about trying to tell a story and expressing that story with emotion. I translate my dreams and experiences through my artwork. My inspiration not only comes from my personal experiences but also from nature, music and books.”
-                    </p>                    
-            </div> 
-       
-            <button class="button close-button">close</button>
-        
-        </dialog>
-    </section>
-       
     <section class="quote-box">
         <h2 id="quote-text">"Creativity is a view into one's soul."</h2>
         <p id="quote-author">--Jennifer Leigh</p>
     </section>
 
+
+       
+
+
 <main >
-    <div class="wrapper">
+    <section id="artist-statement">
+        <!-- <dialog class="modal" id="modal"> -->
+                               
+            <!-- <h3 id="artist-statement-tagline">“Creativity is a view into one’s soul”</h3>  -->
+            <div id="artist-statement-container">                     
+                <div class="profile">
+                    <img src="/images/Profile_photo.jpg" alt="digital illustration of artist Jennifer Leigh">
+                    <div class="logo"><img src="/images/logos/Flying_Onion_logo.png"  alt="past logo for Jennifer Leigh Arts, image of flying onion"><caption>Jennifer Leigh Arts flying onion logo (retired)</caption>
+                    </div>
+                </div>
+                <!-- <img id="artist-statement-pic" src="/images/Profile_photo.jpg">   -->
+                <div id="artist-statement-text"> <h2>About the Artist</h2>                               
+                    <p>
+                    Jennifer was born in Kalamazoo, Michigan in 1973. She started taking art seriously in high school, where she received a four year art award upon graduation. After high school she went on to study at Western Michigan University, where she received awards and honors in juried exhibitions. She graduated in 2000 with a Bachelor of Fine Arts, emphasis in Watercolor. In 2009 she went back to school at Kalamazoo Valley Community College, pursuing an Associate of Applied Science in Graphic Design and secondary in Illustration. She graduated with Honors in 2012.
+                    <br><br>
+                    Jennifer Leigh is an experimental artist. She enjoys learning how to create with many different kinds of media. Gouache is her favorite. She has experience with Watercolor, Acrylic, Oils, Charcoal, Colored Pencil, Ceramics, Printmaking, Metalsmithing and Digital Media.
+                    <br><br>
+                    Jennifer has often used her creative outlets as therapy. She creates with her emotions. “I feel my artwork is expressive; it helps me express my emotions. If you see the progression of my artwork you would see the different stages in my life. My artwork is about trying to tell a story and expressing that story with emotion. I translate my dreams and experiences through my artwork. My inspiration not only comes from my personal experiences but also from nature, music and books.”
+                    <br><br><i>*****Hover over the profile pic for a peek into the past*****</i>
+                    
+                    </p> 
+                </div>                   
+        </div> 
+       
+        <!-- <button class="button close-button">close</button>
+        
+        </dialog> -->
+    </section>
+    <!-- <div class="wrapper">
         <ul class="slider" id="slider" >
           <li> <img class="card" src="images/Vision_VII_web_Gouache_ink.jpg" alt="gouache and ink painting by artist Jennifer Leigh, 'Vision VII'"></li>
           
@@ -81,23 +91,23 @@
           <button id="back">&#x276E;</button>
           <button id="fwd">&#x276F;</button>
         </div>
-      </div>
+      </div> -->
     </main>
 
-    <section class="images-smallscrn">
+    <!-- <section class="images-smallscrn">
         
-              <img class="images-smallscrn-each" src="images/Vision_VII_web_Gouache_ink.jpg" alt="gouache and ink painting by artist Jennifer Leigh, 'Vision VII'">
+              <img class="images-smallscrn-each" src="/images/Vision_VII_web_Gouache_ink.jpg" alt="gouache and ink painting by artist Jennifer Leigh, 'Vision VII'">
               
-              <img class="images-smallscrn-each" src="images/Gravitational_Force_web_Digital_Illustration.jpg" alt="digital illustration by artist Jennifer Leigh, 'Gravitational Force'">
+              <img class="images-smallscrn-each" src="/images/Gravitational_Force_web_Digital_Illustration.jpg" alt="digital illustration by artist Jennifer Leigh, 'Gravitational Force'">
 
-              <img class="images-smallscrn-each" src="images/gouache_wc_collage/Envisage_web_mixed_media.jpg" alt="mixed media painting by artist Jennifer Leigh, 'Envisage'">
+              <img class="images-smallscrn-each" src="/images/gouache_wc_collage/Envisage_web_mixed_media.jpg" alt="mixed media painting by artist Jennifer Leigh, 'Envisage'">
     
-              <img class="images-smallscrn-each" src="images/For_all_those_remembered_and_all_those_forgotten_web_Gouache.jpg" alt="gouache painting by artist Jennifer Leigh, 'For all those remembered and all those forgotten'"> 
+              <img class="images-smallscrn-each" src="/images/For_all_those_remembered_and_all_those_forgotten_web_Gouache.jpg" alt="gouache painting by artist Jennifer Leigh, 'For all those remembered and all those forgotten'"> 
                
-              <img class="images-smallscrn-each" src="images/Profile_photo.jpg" alt="digital illustration of the artist Jennifer Leigh">
+              <img class="images-smallscrn-each" src="/images/Profile_photo.jpg" alt="digital illustration of the artist Jennifer Leigh">
           
-              <img class="images-smallscrn-each" src="images/Mother_Earth_Goddess_I_Instinct.jpg" alt="gouache and  ink painting by artist Jennifer Leigh, 'Mother Earth Goddess I Instinct'">    
-    </section>
+              <img class="images-smallscrn-each" src="/images/Mother_Earth_Goddess_I_Instinct.jpg" alt="gouache and  ink painting by artist Jennifer Leigh, 'Mother Earth Goddess I Instinct'">    
+    </section> -->
 
     <section id="divider-bottom">
         <div id="copyright">
@@ -123,7 +133,7 @@
 
     <!-- <footer>This site has been visited <span id="visits"></span> times.</footer> -->
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 
 </body>
 

@@ -109,6 +109,76 @@ header {
     opacity: 0;
 }
 
+main {
+    background-color: #00937e;
+    margin: 0;
+    padding: 0;
+}
+
+/* ARTIST STATEMENT **NEW, 07-13-23** */
+#artist-statement {
+    display: flex;
+    justify-content: center;
+    
+    /* background-color: #00937e; */
+}
+
+#artist-statement-container {
+    display: float;
+    justify-content: center;
+    background-color: white;
+    height: auto;
+    /* width: 90vw; */
+    /* padding: 5px 0; */
+    margin: 15px;
+    /* padding: 10px; */
+}
+
+.profile {
+    max-width: 385px;
+    float: left;
+    height: auto;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.profile .logo {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 10px 10px 0px 10px;
+}
+
+.profile:hover .logo {
+    display: inline;
+    text-align: center;
+    background-color: black;
+   /* padding: 10px 10px 0px 10px; */
+   margin-bottom: 0;
+    color: #f9bf5f;
+}
+
+caption {
+    padding: 0;
+    margin: 0;
+}
+
+#artist-statement-text {
+    margin: 10px;
+}
+
+#artist-statement p {
+    display: block;
+
+    margin-left: 5px;
+padding-top: 3px;
+margin-top: 3px;
+}
+
+
 /* ARTIST STATEMENT MODAL */
 dialog {
     height: 90vh;
@@ -205,11 +275,9 @@ margin-top: 3px;
 
 .quote-box {
     background-color: #faa723;
-    /* margin: 0;
+    margin: 0;
     padding-top: 1px;
-    padding-right: 5px; */
-    padding: 5px 25px 5px 0px;
-   
+    padding-right: 5px;
   
 }
 
@@ -266,6 +334,11 @@ img {
     .images-smallscrn-each {
       width: 90vw;
       padding: 3px;
+    }
+
+    #artist-statement-img {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -438,7 +511,7 @@ img {
 .contact::before {
     content: "";
     position: absolute;
-    background-image: url(images/logo_grayscale.png);
+    background-image: url(/images/logo_grayscale.png);
     background-repeat:repeat;
     opacity: .75;
 }

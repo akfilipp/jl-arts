@@ -34,7 +34,7 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     letter-spacing: .125rem;
     padding-bottom: 1rem;
   }
@@ -60,8 +60,15 @@
   }
 
   #festival-description {
+    font-size: 1.15rem;
+    color: black;
+    font-weight: 400;
+  }
+
+  #festival-keywords {
     font-size: 1.25rem;
-    font-weight: 500;
+    /* font-weight: 500; */
+    color: black;
     letter-spacing: .155rem;
     text-align: center;
     text-transform: uppercase;
@@ -71,7 +78,7 @@
   #festival-location {
     font-size: 1.125rem;
     font-weight: 400;
-    letter-spacing: .125rem;
+    letter-spacing: .15rem;
     text-align: center;
     text-transform: uppercase;
     padding-top: .5rem;
@@ -99,9 +106,27 @@
 
   .return {
     font-weight: lighter;
-    color: black;
-    margin-top: 15px;
+    color: darkslategray;
+    /* margin-top: 10px; */
     text-transform: none;
+    
+  }
+
+  a:link {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    box-shadow: #faa723;
+  }
+
+  a:hover {
+    font-weight: bolder;
+    background-color: #faa723;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: black;
   }
 
   @media all and (max-width: 768px) {
