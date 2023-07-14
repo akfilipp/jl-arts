@@ -123,6 +123,11 @@ main {
     /* background-color: #00937e; */
 }
 
+#artist-statement-title {
+   
+    margin-bottom: 0px;
+}
+
 #artist-statement-container {
     display: float;
     justify-content: center;
@@ -142,6 +147,10 @@ main {
     position: relative;
     display: inline-block;
 }
+.profile-pic {
+    /* background-color: black; */
+    color: darkgray;
+}
 
 .profile .logo {
     display: none;
@@ -157,7 +166,7 @@ main {
     text-align: center;
     background-color: black;
    /* padding: 10px 10px 0px 10px; */
-   margin-bottom: 0;
+    margin-bottom: 0;
     color: #f9bf5f;
 }
 
@@ -179,52 +188,6 @@ margin-top: 3px;
 }
 
 
-/* ARTIST STATEMENT MODAL */
-dialog {
-    height: 90vh;
-    width: 90vw;
-}
-.modal h2 {
-    margin-bottom: 3px;
-    margin-top: 5px;
-    font-size: 2rem;
-}
-#artist-statement-container {
-    /* display: flex;
-align-content: flex-start; */
-padding: 5px 0;
-
-   
-}
-
-#artist-statement-tagline {
-    font-weight: 500;
-    font-size: 1.25rem;
-    font-style: oblique;
-    margin: 0 0 2px 0;
-    padding: 0;
-}
-
-
-.modal img {
-/* justify-content: flex-start;
-*/
-float: left;
-max-width: 200px;
-height: auto;
-margin-right: 10px;
-/* flex-wrap: wrap; */
-}
-
-.modal p {
-
-/* display:inline-block;
-align-items: flex-start;
-flex-wrap: wrap; */
-margin-left: 5px;
-padding-top: 3px;
-margin-top: 3px;
-}
 
 .open-button {
   color: inherit;

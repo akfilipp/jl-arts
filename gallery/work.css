@@ -4,7 +4,6 @@
   
   body {
     margin: 0;
-    padding: 0;
     font-family: 'Myriad Pro', sans-serif;
   }
 
@@ -16,46 +15,16 @@
     align-content: center;
 } 
 
-#branding {
+/* #branding {
   display: flex;
   align-content: center;
   padding: 5px 0;
-}
+} */
 
 #logo {
   justify-content: flex-start;
   /* max-height: 100px; */
   max-width: 450px;
-}
-/* #branding {
-    display: flex;
-    align-content: center;
-}
-
-#logo {
-    justify-content: flex-start;
-    max-width: 100px;
-    max-height: 100px;
-  
- } */
-
-#title {
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: .05rem;
-   display:inline-block;
-   align-items: center;
-    flex-wrap: nowrap;
-    padding-top: 15px;
-    padding-left: 5px;
-}
-
-#subtitle {
-    color: black;
-    font-size: 1rem;
-    font-weight: normal;
-    letter-spacing: .1em;
-    text-align: center;
 }
 
 .nav {
@@ -66,13 +35,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 100;
-    
+    z-index: 100; 
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
-
-
 
 .nav__list {
     list-style: none;
@@ -127,13 +93,6 @@
     opacity: 0;
 }
 
-/* ARTIST STATEMENT MODAL */
-
-#artist-statement {
-  
-  height: 90 vw;
-  width: auto;
-}
 .open-button {
     color: inherit;
     font-weight: bold;
@@ -146,7 +105,6 @@
 }
 
 
-/* HAMBURGER MENU */
 .hamburger {
     display: block;
     position: relative;
@@ -182,11 +140,14 @@
     padding: 1em;
 }
 
-  
-  main {
+#main-heading {
+  margin-top: 5px;
+ } 
+
+main {
     background-color: #00937e;
     margin: 0;
-    padding: 10px 20px;
+    padding: 5px 10px;
 }
 
   
@@ -209,7 +170,7 @@
   .column {
     float: left;
     width: 33.3%;
-    height: 800px;
+    min-height: 800px;
     display: none;
   }
   
@@ -226,7 +187,7 @@
     background-color: white;
     padding: 10px;
     width: 100%;
-    max-height: 95%;
+    /* max-height: 95%; */
   
   }
 
@@ -245,7 +206,7 @@
     border: none;
     outline: none;
     padding: 12px 16px;
-    margin: .15rem;
+    margin: .15rem .15rem .3rem .15rem;
     background-color: white;
     cursor: pointer;
   }
@@ -260,6 +221,10 @@
   }
 
   @media only screen and (max-width: 480px) {
+    #logo {
+      max-width: 90vw;
+    }
+
     .column {
       width: 100%;
     }
@@ -279,3 +244,5 @@
     } 
 
   }
+
+  
