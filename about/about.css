@@ -144,6 +144,7 @@ main {
     float: left;
     height: auto;
     margin: 10px;
+    /* padding-right: 15px; */
     position: relative;
     display: inline-block;
 }
@@ -180,11 +181,10 @@ caption {
 }
 
 #artist-statement p {
-    display: block;
-
+    display: block;    
     margin-left: 5px;
-padding-top: 3px;
-margin-top: 3px;
+    padding-top: 3px;
+    margin-top: 3px;
 }
 
 
