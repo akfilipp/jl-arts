@@ -12,7 +12,7 @@
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
-        dayMonth = "09/09/",
+        dayMonth = "09/16/",
         eventDate = dayMonth + yyyy;
     
     today = mm + "/" + dd + "/" + yyyy;
@@ -20,8 +20,8 @@
       eventDate = dayMonth + nextYear;
     }
    
-    
-    const countDown = new Date(eventDate).getTime(),
+   
+    const countDown = new Date("September 16, 2023 11:00:0").getTime(),
         x = setInterval(function() {    
   
           const now = new Date().getTime(),
